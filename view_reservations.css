@@ -1,0 +1,122 @@
+/* General Reset and Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px; /* Added padding for spacing */
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #000000;
+    font-size: 2em; /* Increased heading size for emphasis */
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added shadow for table */
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+/* Table Header */
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+/* Table Header */
+th {
+    background-color: #2a1805;
+    color: white;
+}
+
+/* Table Rows */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+/* Actions Links Styling */
+td a {
+    color: #2a1805;
+    text-decoration: none;
+    margin: 0 5px;
+    font-weight: bold; /* Bold actions links for emphasis */
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+
+/* Button Styling */
+.cta-button {
+    display: inline-block;
+    padding: 10px 15px;
+    color: white;
+    background-color: #2a1805;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 auto; /* Center the button */
+    display: block; /* Ensure the margin auto centers it */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.cta-button:hover {
+    background-color: #000000; /* Darker blue on hover */
+}
+
+/* Button Container */
+.button-container {
+    text-align: center; /* Center the button */
+    margin-bottom: 20px; /* Space between button and table */
+}
+
+/* Logout Button Specific Styling */
+.logout-button {
+    background-color: #2a1805;
+    padding: 12px 20px; /* Increased padding for emphasis */
+}
+
+.logout-button:hover {
+    background-color: #000000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    .cta-button {
+        padding: 8px 12px;
+    }
+}

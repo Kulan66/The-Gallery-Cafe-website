@@ -1,0 +1,279 @@
+/* General Reset and Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #2a1805;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header Styles */
+header {
+    background-color: #2a1805;
+    color: #ecf0f1;
+    padding: 20px 0;
+}
+
+header .container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2em;
+    margin-right: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #ecf0f1;
+    font-size: 1em;
+}
+
+header nav ul li a.active {
+    font-weight: bold;
+    color: #be7b10;
+}
+
+/* User Profile Section */
+#user-profile {
+    background: #fff;
+    padding: 30px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+#user-profile .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+}
+
+.profile-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.profile-details h2 {
+    margin-bottom: 5px;
+}
+
+.profile-details p {
+    margin: 0;
+}
+
+.logout-button {
+    background: #2a1805;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.logout-button:hover {
+    background: #2a1805;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px 0;
+}
+
+main .container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+/* Sections */
+section {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    margin-bottom: 10px;
+}
+
+section p {
+    margin-bottom: 20px;
+}
+
+/* Call to Action Buttons */
+.cta-button {
+    background: #2a1805;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background: #2a1805;
+}
+
+/* Map Section */
+#map {
+    background-color: #f9f9f9; /* Light background color for the map section */
+    padding: 50px 0; /* Add padding above and below the section */
+  }
+  
+  #map h2 {
+    text-align: center; /* Center align the section heading */
+    font-size: 2em; /* Increase the font size for the section heading */
+    margin-bottom: 20px; /* Space below the section heading */
+    color: #000000; /* Dark color for the text */
+  }
+  
+  #map-container {
+    display: flex; /* Use flexbox for responsive design */
+    justify-content: center; /* Center align the map container */
+  }
+  
+  #map-container iframe {
+    max-width: 100%; /* Make the iframe responsive */
+    height: auto; /* Adjust the height automatically */
+    border-radius: 8px; /* Rounded corners for the iframe */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  }
+
+/* Footer Styles */
+footer {
+    background: #2a1805;
+    color: #ecf0f1;
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer .container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #ecf0f1;
+}
+
+footer a:hover {
+    color: #f39c12;
+}
+
+.social-icons {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons li a img {
+    width: 40px; /* Adjust size of social icons */
+    height: 40px;
+    border-radius: 50%; /* Rounded social icons */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header h1 {
+        margin-bottom: 10px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .profile-photo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .profile-info {
+        flex-direction: column;
+    }
+
+    .logout-button {
+        margin-top: 20px;
+    }
+
+    main .container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .cta-button {
+        padding: 10px 15px;
+        font-size: 0.9em;
+    }
+
+    .social-icons img {
+        width: 25px;
+        height: 25px;
+    }
+}

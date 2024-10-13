@@ -1,0 +1,155 @@
+/* Basic reset and general styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #000000;
+    background-color: #f4f4f4;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+/* Header styles */
+header {
+    background-color: #2a1805;
+    color: #fff;
+    padding: 1rem 0;
+    border-bottom: 3px solid #2a1805;
+}
+
+header .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+}
+
+/* Main content styles */
+main {
+    padding: 2rem 0;
+}
+
+main .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.staff-rules, .upcoming-events {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.staff-rules h2, .upcoming-events h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: #2a1805;
+}
+
+.staff-rules ul, .upcoming-events ul {
+    list-style: none;
+}
+
+.staff-rules li, .upcoming-events li {
+    margin-bottom: 0.5rem;
+}
+
+.upcoming-events p {
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+/* Footer styles */
+footer {
+    background-color: #2a1805; /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons li a img {
+    width: 40px; /* Adjust size of social icons */
+    height: 40px;
+    border-radius: 50%; /* Rounded social icons */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    .staff-rules, .upcoming-events {
+        padding: 1rem;
+    }
+
+    .social-icons {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}

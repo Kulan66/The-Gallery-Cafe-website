@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Users - The Gallery Café</title>
+    <link rel="stylesheet" href="manage users.css"> <!-- Link to external CSS -->
+    <script src="manage-users.js" defer></script> <!-- Link to external JavaScript -->
+    <link rel="icon" href="icon.ico" type="image/x-icon"> <!-- Favicon for the website -->
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>The Gallery Café - Manage Users</h1>
+            <nav>
+                <ul>
+                    <li><a href="admin.html">Dashboard</a></li>
+                    <li><a href="manage-users.html">Manage Users</a></li>
+                    <li><a href="manage_menu.php">Manage Menu</a></li>
+                    <li><a href="update-info.php">Update Information</a></li>
+                    <li><a href="home.html">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <section id="manage-users">
+            <div class="container">
+                <h2>Manage Users</h2>
+                
+                <!-- Form for Adding a New User -->
+                <form action="add-user.php" method="POST" id="add-user-form">
+                    <h3>Add New User</h3>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <label for="user_type">User Type:</label>
+                    <select id="user_type" name="user_type" required>
+                        <option value="Customer">Customer</option>
+                        <option value="Operational Staff">Operational Staff</option>
+                        <option value="Admin">Admin</option>
+                    </select>
+
+                    <button type="submit" class="cta-button">Add User</button>
+                </form>
+                
+                
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>About Us: The Gallery Café is dedicated to providing the best dining experience in Colombo.</p>
+            <p>Head Office Address: 115, Sir Chittampalam A Gardiner Mawatha, 00200, Colombo, Sri Lanka</p>
+            <p>Telephone: +940760082003</p>
+            <p>Email: <a href="mailto:info@gallerycafe.com">gallerycafe@gmail.com</a></p>
+            <ul class="social-icons">
+                <li><a href="https://facebook.com/gallerycafe" target="_blank"><img src="facebook.png" alt="Facebook"></a></li>
+                <li><a href="https://twitter.com/gallerycafe" target="_blank"><img src="twitter.png" alt="Twitter"></a></li>
+                <li><a href="https://instagram.com/gallerycafe" target="_blank"><img src="instagram.jpg" alt="Instagram"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

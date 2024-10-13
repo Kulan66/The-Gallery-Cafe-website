@@ -1,0 +1,464 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Header */
+header {
+  background-color: #2a1805; /* Dark Gray Background */
+  color: #fff; /* White Text */
+  padding: 10px 0;
+}
+
+header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  color: #ffffff; /* Highlight color */
+}
+
+/* Hero Section */
+#hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#hero video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(50%);
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.hero-content h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: #2a1805; /* Highlight color */
+  color: #ffffff; /* Dark Gray Text */
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.cta-button:hover {
+  background-color: #2a1805;
+}
+
+/* Slideshow Section */
+#slideshow {
+  position: relative;
+  max-width: 80%; /* Reduced from 100% to 80% */
+  margin: 30px auto; /* Reduced from 50px to 30px for a smaller size */
+}
+
+.mySlides img {
+  width: 100%;
+  height: auto;
+}
+
+.text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.text h3 {
+  margin-bottom: 10px;
+}
+
+.text p {
+  font-size: 0.9rem;
+}
+
+
+
+
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Services Section */
+#services {
+  padding: 50px 0;
+  background-color: #f4f4f4;
+}
+
+#services h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.service-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.service-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: calc(33% - 40px);
+  box-sizing: border-box;
+  opacity: 0; /* Start with hidden */
+  transform: translateY(20px); /* Start from below */
+  animation: fadeInUp 1s forwards; /* Apply animation */
+  animation-delay: 0.2s; /* Delay for staggered effect */
+}
+
+/* Staggered Animation */
+.service-item:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.service-item:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.service-item img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.service-item h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.service-item p {
+  margin-bottom: 15px;
+}
+
+.service-item .cta-button {
+  background-color: #2a1805; /* Highlight color */
+  color: #ffffff; /* Dark Gray Text */
+}
+
+
+/* Testimonials Section */
+#testimonials {
+  padding: 50px 0;
+  background-color: #fff;
+}
+
+#testimonials h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.testimonial-carousel {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+.testimonial-item {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: center;
+  font-style: italic;
+}
+
+.testimonial-item cite {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.testimonial-carousel .prev, .testimonial-carousel .next {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 24px;
+}
+
+.testimonial-carousel .prev {
+  left: 10px;
+}
+
+.testimonial-carousel .next {
+  right: 10px;
+}
+
+/* Blog Section */
+#blog {
+  padding: 50px 0;
+  background-color: #f4f4f4;
+}
+
+#blog h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.blog-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.blog-post {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: calc(33% - 40px);
+  box-sizing: border-box;
+}
+
+.blog-post img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.blog-post h3 {
+  margin-bottom: 10px;
+}
+
+.blog-post p {
+  margin-bottom: 15px;
+}
+
+.blog-post .cta-button {
+  background-color: #2a1805; /* Highlight color */
+  color: #ffffff; /* Dark Gray Text */
+}
+
+/* Map Section */
+#map {
+  background-color: #f9f9f9; /* Light background color for the map section */
+  padding: 50px 0; /* Add padding above and below the section */
+}
+
+#map h2 {
+  text-align: center; /* Center align the section heading */
+  font-size: 2em; /* Increase the font size for the section heading */
+  margin-bottom: 20px; /* Space below the section heading */
+  color: #000000; /* Dark color for the text */
+}
+
+#map-container {
+  display: flex; /* Use flexbox for responsive design */
+  justify-content: center; /* Center align the map container */
+}
+
+#map-container iframe {
+  max-width: 100%; /* Make the iframe responsive */
+  height: auto; /* Adjust the height automatically */
+  border-radius: 8px; /* Rounded corners for the iframe */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+/* Newsletter Signup Section */
+#newsletter {
+  background-color: #fff; /* White background color for the newsletter section */
+  padding: 50px 0; /* Add padding above and below the section */
+  text-align: center; /* Center align all content in the section */
+}
+
+#newsletter h2 {
+  font-size: 2em; /* Increase the font size for the section heading */
+  margin-bottom: 15px; /* Space below the section heading */
+  color: #000000; /* Dark color for the text */
+}
+
+#newsletter p {
+  font-size: 1.2em; /* Slightly larger font size for the text */
+  color: #000000; /* Slightly lighter color for the text */
+  margin-bottom: 30px; /* Space below the paragraph */
+}
+
+#newsletter form {
+  display: flex; /* Use flexbox for responsive form layout */
+  flex-direction: column; /* Stack form elements vertically */
+  align-items: center; /* Center align the form elements */
+  max-width: 600px; /* Maximum width for the form */
+  margin: 0 auto; /* Center align the form horizontally */
+}
+
+#newsletter input[type="email"] {
+  padding: 15px; /* Padding inside the email input field */
+  font-size: 1em; /* Font size for the input text */
+  border: 2px solid #ddd; /* Border around the input field */
+  border-radius: 5px; /* Rounded corners for the input field */
+  margin-bottom: 15px; /* Space below the input field */
+  width: 100%; /* Full width for the input field */
+  max-width: 400px; /* Maximum width for the input field */
+}
+
+#newsletter button {
+  background-color: #2a1805; /* Button background color */
+  color: #fff; /* Text color for the button */
+  padding: 15px 25px; /* Padding inside the button */
+  font-size: 1em; /* Font size for the button text */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners for the button */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for the background color */
+}
+
+#newsletter button:hover {
+  background-color: #2a1805; /* Darker shade on hover */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  #map-container {
+      flex-direction: column; /* Stack map container elements vertically on smaller screens */
+  }
+
+  #map-container iframe {
+      width: 100%; /* Full width for the iframe on smaller screens */
+  }
+}
+
+/* Footer Section */
+footer {
+  background-color: #2a1805; /* Dark background color */
+  color: #fff; /* White text color */
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+footer a {
+  color: #f8c291;
+  text-decoration: none;
+}
+
+.social-icons {
+  list-style-type: none;
+  padding: 0;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons li a img {
+  width: 30px; /* Adjust size of social icons */
+  height: 30px;
+  border-radius: 50%; /* Rounded social icons */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-content {
+      flex-direction: column;
+  }
+
+  .about-image video {
+      max-width: 80%; /* Smaller video size */
+      height: auto;
+  }
+
+  .team-members {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .team-member {
+      min-width: 150px;
+  }
+
+  .prev, .next {
+      font-size: 1.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+      font-size: 1.5em;
+  }
+
+  nav ul {
+      flex-direction: column;
+  }
+
+  nav ul li {
+      margin-bottom: 10px;
+  }
+
+  .cta-button {
+      padding: 8px 16px;
+  }
+
+  #newsletter input[type="email"] {
+      width: 100%;
+  }
+}

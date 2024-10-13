@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations - The Gallery Café</title>
+    <link rel="stylesheet" href="Pre-Order Your Meal.css"> <!-- Link to external CSS -->
+    <script src="Pre-Order Your Meal scripts.js" defer></script> <!-- Link to external JavaScript for the reservations page -->
+    <link rel="icon" href="icon.ico" type="image/x-icon"> <!-- Favicon for the website -->
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>The Gallery Café</h1>
+            <nav>
+                <ul>
+                    <li><a href="user.html">Home</a></li>
+                    <li><a href="menu.php">Menu</a></li>
+                    <li><a href="reservations.html">reservations</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.php">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<!-- Pre-Order Section -->
+<section id="pre-order">
+    <div class="container">
+        <h2>Pre-Order Your Meal</h2>
+        <p>Fill out the form below to pre-order your favorite dishes from The Gallery Café. We will have your meal ready for you to pick up at the selected time.</p>
+        <form action="submit_order.php" method="post">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+            <div class="form-group">
+                <label for="order-date">Pick-Up Date</label>
+                <input type="date" id="order-date" name="order-date" required>
+            </div>
+            <div class="form-group">
+                <label for="order-time">Pick-Up Time</label>
+                <input type="time" id="order-time" name="order-time" required>
+            </div>
+            <div class="form-group">
+                <label for="meal">Select Your Meal</label>
+                <select id="meal" name="meal" required>
+                    <option value="">-- Select a Meal --</option>
+                    <option value="Kottu Roti">Kottu Roti  Rs.1200</option>
+                    <option value="Sweet and Sour Chicken">Sweet and Sour Chicken  Rs.1700</option>
+                    <option value="Pasta Carbonara">Pasta Carbonara  Rs.1200</option>
+                    <option value="Palak Paneer">Palak Paneer  Rs.1700</option>
+                    <option value="Enchiladas">Enchiladas  Rs.1750</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="special-request">Special Requests</label>
+                <textarea id="special-request" name="special-request" placeholder="Any special requests or dietary restrictions?" rows="4"></textarea>
+            </div>
+
+            <!-- New fields for bank card details -->
+            <div class="form-group">
+                <label for="card-name">Cardholder Name</label>
+                <input type="text" id="card-name" name="card-name" placeholder="Enter the cardholder's name" required>
+            </div>
+            <div class="form-group">
+                <label for="card-number">Card Number</label>
+                <input type="text" id="card-number" name="card-number" placeholder="Enter your card number" pattern="\d{16}" maxlength="16" required>
+            </div>
+            <div class="form-group">
+                <label for="card-expiry">Expiration Date</label>
+                <input type="month" id="card-expiry" name="card-expiry" required>
+            </div>
+            <div class="form-group">
+                <label for="card-cvc">CVC Code</label>
+                <input type="text" id="card-cvc" name="card-cvc" placeholder="Enter the CVC code" pattern="\d{3}" maxlength="3" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit Order</button>
+            </div>
+            
+        
+        </form>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>About Us: The Gallery Café is dedicated to providing the best dining experience in Colombo.</p>
+        <p>Head Office Address: 115, Sir Chittampalam A Gardiner Mawatha, 00200, Colombo, Sri Lanka</p>
+        <p>Telephone: +940760082003</p>
+        <p>Email: <a href="mailto:info@gallerycafe.com">gallerycafe@gmail.com</a></p>
+        <ul class="social-icons">
+            <li><a href="https://facebook.com/gallerycafe" target="_blank"><img src="facebook.png" alt="Facebook"></a></li>
+            <li><a href="https://twitter.com/gallerycafe" target="_blank"><img src="twitter.png" alt="Twitter"></a></li>
+            <li><a href="https://instagram.com/gallerycafe" target="_blank"><img src="instagram.jpg" alt="Instagram"></a></li>
+            <li><a href="https://linkedin.com/company/gallerycafe" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a></li>
+        </ul>
+    </div>
+</footer>
+</body>
+
+</html>
+

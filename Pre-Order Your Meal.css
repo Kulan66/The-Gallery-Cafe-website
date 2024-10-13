@@ -1,0 +1,203 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #2a1805;
+    background-color: #f4f4f4;
+}
+
+/* Header Styling */
+header {
+    background: #2a1805;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Pre-Order Section Styling */
+#pre-order {
+    background: #fff;
+    padding: 30px 15px; /* Reduced padding for a smaller card */
+    margin: 20px auto;
+    border-radius: 8px; /* Slightly smaller border radius */
+    max-width: 500px; /* Reduced max-width for a smaller card */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Reduced box shadow for a subtle effect */
+}
+
+#pre-order h2 {
+    margin-bottom: 15px; /* Reduced margin for a smaller header */
+    font-size: 1.6em; /* Slightly smaller font size */
+    color: #333;
+}
+
+#pre-order p {
+    margin-bottom: 20px; /* Reduced margin for a smaller text block */
+    color: #555;
+}
+
+#pre-order .form-group {
+    margin-bottom: 15px; /* Reduced margin for form groups */
+}
+
+#pre-order label {
+    display: block;
+    margin-bottom: 4px; /* Reduced margin for labels */
+    font-weight: bold;
+}
+
+#pre-order input,
+#pre-order select,
+#pre-order textarea {
+    width: 100%;
+    padding: 8px; /* Reduced padding for input elements */
+    border: 1px solid #ddd;
+    border-radius: 4px; /* Slightly smaller border radius */
+}
+
+#pre-order input:focus,
+#pre-order select:focus,
+#pre-order textarea:focus {
+    border-color: #333;
+    outline: none;
+}
+
+#pre-order input[type="text"][pattern="\d{16}"],
+#pre-order input[type="text"][pattern="\d{3}"] {
+    letter-spacing: 1px;
+}
+
+#pre-order .form-group input::placeholder,
+#pre-order .form-group textarea::placeholder {
+    color: #888;
+}
+
+/* Style for CVC Code field to ensure it is numeric */
+#pre-order input[name="card-cvc"] {
+    ime-mode: disabled; /* Prevents non-numeric input */
+}
+
+/* Call-to-Action Button */
+#pre-order .cta-button,
+#pre-order button[type="submit"] {
+    background: #2a1805;
+    color: #fff;
+    border: none;
+    padding: 12px; /* Reduced padding for a smaller button */
+    font-size: 0.9em; /* Slightly smaller font size */
+    cursor: pointer;
+    border-radius: 4px; /* Slightly smaller border radius */
+    transition: background 0.3s ease;
+    display: block; /* Ensures the button takes up the full width of its container */
+    margin-top: 10px; /* Added margin to ensure some space above the button */
+}
+
+#pre-order .cta-button:hover,
+#pre-order button[type="submit"]:hover {
+    background: #3e2413; /* Slightly lighter shade on hover */
+}
+
+/* Footer Styling */
+footer {
+    background: #2a1805;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer .container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #f4f4f4;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .social-icons {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+footer .social-icons li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer .social-icons img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    #pre-order .container {
+        padding: 20px;
+    }
+
+    footer .container {
+        width: 100%;
+    }
+}

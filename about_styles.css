@@ -1,0 +1,279 @@
+/* Reset default styles for a consistent baseline */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* General body styles */
+body {
+    background-color: #f4f4f4;
+    color: #000000;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background: #2a1805;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+header nav ul li {
+    margin: 0;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+header nav ul li a.active,
+header nav ul li a:hover {
+    background: #2a1805;
+    border-radius: 5px;
+}
+
+/* About Us section */
+#about-us {
+    background: #fff;
+    padding: 2rem 0;
+}
+
+#about-us .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#about-us h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #2a1805;
+}
+
+#about-us .about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#about-us .about-text {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#about-us .about-text h3 {
+    color: #2a1805;
+    margin-bottom: 0.5rem;
+}
+
+#about-us .about-text p {
+    margin-bottom: 1rem;
+}
+
+#about-us .about-text ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+}
+
+#about-us .about-text ul li {
+    margin-bottom: 0.5rem;
+}
+
+#about-us .team-members {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+#about-us .team-member {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 200px;
+}
+
+#about-us .team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+}
+
+#about-us .team-member h4 {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+    color: #2a1805;
+}
+
+#about-us .team-member p {
+    margin: 0;
+    color: #2a1805;
+}
+
+/* Video styles */
+#about-us video {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Newsletter Signup section */
+#newsletter {
+    background: #ffffff;
+    color: #000000;
+    padding: 2rem 0;
+}
+
+#newsletter .container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#newsletter h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+#newsletter p {
+    margin-bottom: 1rem;
+}
+
+#newsletter form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+#newsletter input[type="email"] {
+    padding: 0.75rem;
+    width: 100%;
+    max-width: 400px;
+    border: none;
+    border-radius: 5px;
+}
+
+#newsletter button.cta-button {
+    background: #2a1805;
+    color: #ffffff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#newsletter button.cta-button:hover {
+    background: #2a1805;
+}
+
+/* Map Section */
+#map {
+    background-color: #f9f9f9; /* Light background color for the map section */
+    padding: 50px 0; /* Add padding above and below the section */
+  }
+  
+  #map h2 {
+    text-align: center; /* Center align the section heading */
+    font-size: 2em; /* Increase the font size for the section heading */
+    margin-bottom: 20px; /* Space below the section heading */
+    color: #000000; /* Dark color for the text */
+  }
+  
+  #map-container {
+    display: flex; /* Use flexbox for responsive design */
+    justify-content: center; /* Center align the map container */
+  }
+  
+  #map-container iframe {
+    max-width: 100%; /* Make the iframe responsive */
+    height: auto; /* Adjust the height automatically */
+    border-radius: 8px; /* Rounded corners for the iframe */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  }
+  
+/* Footer Section */
+footer {
+    background-color: #2a1805; /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  footer p {
+    margin-bottom: 10px;
+  }
+  footer a {
+    color: #f8c291;
+    text-decoration: none;
+  }
+  
+  .social-icons {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .social-icons li a img {
+    width: 30px; /* Adjust size of social icons */
+    height: 30px;
+    border-radius: 50%; /* Rounded social icons */
+  }
+  
+/* Responsive Design */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    #about-us .about-content {
+        flex-direction: column;
+    }
+
+    #about-us .team-members {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #map-container iframe {
+        width: 100%;
+        height: 400px;
+    }
+}
